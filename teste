@@ -1,0 +1,22 @@
+#include <stdio.h>;
+#include <conio.h>
+#include <stdlib.h>
+
+int main()
+{	
+	//char 1B;
+	char texto[] = "A terra nao eh plana\n";
+	char *ptexto;
+	//int 2;
+
+	ptexto=&texto[0];
+	while(*ptexto != '\0')
+	{
+		printf("%c",*ptexto);
+		ptexto++;
+	}
+
+	system ("pause");
+
+	return 0;
+}
